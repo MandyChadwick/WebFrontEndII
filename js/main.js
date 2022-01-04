@@ -1,3 +1,5 @@
+// create key value pairs in a list for the menu of the portfolio
+
 const links = [
     {
       label: "Week One",
@@ -65,3 +67,24 @@ const links = [
         url: "week14/index.html"
       }
   ]
+
+  // declare variable and begin ordered list
+var linksHtml = "<ul>";
+
+
+//loop through links array
+for (var i = 0; i < links.length; i++) {
+    //assign values to variables coorelated with key.
+    var i;
+    var label = links[i]['label'];
+    var url   = links[i]['url']  ;
+    // create list Item for each item in links array
+    // create anchor tag with label and url
+    linksHtml += `<li><a class="btn btn-dark"  href="${url}">${label}</a></li><br>`;
+    }
+
+//close ordered list
+linksHtml += "</ul>";
+
+// insert html into the linksHtml div in index
+document.getElementById('linksHtml').innerHTML = linksHtml;
