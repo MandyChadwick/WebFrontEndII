@@ -74,11 +74,11 @@ var linksHtml = "<ul>";
 
 //loop through links array
 for (var i = 0; i < links.length; i++) {
-    //assign values to variables coorelated with key.
+    //assign values to variables to key.
     var i;
     var label = links[i]['label'];
     var url   = links[i]['url']  ;
-    // create list Item for each item in links array
+    // create list item for each item in links array
     // create anchor tag with label and url
     linksHtml += `<li><a class="btn btn-dark"  href="${url}">${label}</a></li><br>`;
     }
