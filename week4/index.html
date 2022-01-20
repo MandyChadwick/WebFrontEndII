@@ -1,1 +1,216 @@
-<h1>Week 4</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+</head>
+<body>
+    <h1>Notes For Week 4 </h1>
+    <h2>WDD 330 Mandy Chadwick</h2>
+    
+    <h3>Question: </h3>
+    <h3>Cool thing I found:</h3>
+    <h3>Chapter 8 JavaScript Novice to Ninja Notes</h3><
+    <p>Forms are made up of a form tag in brackets</p>
+    <p></p>
+<!-- Write your comments here -->
+    <h4>Normal Function:</h4>
+    <p>Format: const namedFunction = function (arg1, arg2) { /* do your stuff */}</p>
+    
+    <p>// Normal function in a callback<br>
+        button.addEventListener('click', function () {<br>
+          // Do something
+        })</p>
+    
+    <h4>Arrow Function:</h4>
+    <p>const namedFunction2 = (arg1, arg2) => {/* do your stuff */}</p>
+    <p>// Arrow function in a callback<br>
+        button.addEventListener('click', () => {<br>
+          // Do something
+        })</p>
+    
+    
+    
+    <p>Note:See the similarity here? Basically, you remove the function keyword and replace it with => at a slightly different location.</p>
+    <a href ="https://zellwk.com/blog/es6/#arrow-functions" target="_blank"  alt="web link to arrow function demonstration">https://zellwk.com/blog/es6/#arrow-functions</a>
+    
+    <p>const zeroArgs = () => {/* do something */}</p>
+    <p>const zeroWithUnderscore = _ => {/* do something */}</p>
+    <p>const oneArg = arg1 => {/* do something */}</p>
+    <p>const oneArgWithParenthesis = (arg1) => {/* do something */}</p>
+    <p>const manyArgs = (arg1, arg2) => {/* do something */}</p>
+    
+    
+    <h2>Notes about the Key Word This</h2>
+    <p><b>This</b> can refer to many different things in Javascript depending on how it is used. </p>
+    <p><b>this</b> within any method refers to the object itself.</p>
+    <p>When you create a new instance of an object with the new keyword, <b>this</b> refers to the instance.</p>
+    <p>When <b>this</b> is called outside of any function, in a global context, this defaults to the Window object in the browser.</p>
+    <p><b>This</b> in event listeners</p>
+    <p><b>This</b> is set to the element that fired the event in an event listener.</p>
+    <h3>Wrapping up This:</h3>
+    
+    <p><b>This</b> is a crucial keyword in JavaScript. It appears in many JavaScript frameworks, so you have to know what it does.
+    In this article, you learned about the six different contexts where this takes on different values. You also learned how to change the this context with functions like bind. Additionally, you also learned to remove event listeners properly.
+    That’s all you need to know about this. Just master the concepts taught in this article and you won’t ever get confused anymore.
+    Before we end off the article, you may have heard people suggest you don’t use this because it’s confusing. I implore you to you to consider reading this article. It might change your view of learning JavaScript.</p>
+    
+    
+    <h3>Novice to Ninja Chapter 5 Notes</h3>
+    <p>An object literal is an object that is created directly in the language by wrapping all its properties and methods in curly braces {}. Object literals are a distinguishing feature of the JavaScript language, as they allow objects to be created quickly without the need for defining a class. They also provide a useful way of organizing your code without polluting the global namespace.
+    I used an example I found in the book in the console:</p>
+     
+    <p>All objects are mutable at any time when a program is running. This means that its properties and methods can be changed or removed, and new properties and methods can be added to the object, even if it was declared using const.</p>
+    
+     
+    <h3>Objects Are Copied By Reference</h3>
+    <p>An important concept to get your head around is that objects are assigned by reference. This means that if a variable is assigned to an object that already exists, it will simply point to the exact same space in memory. So any changes made using either reference will affect the same object.
+    JSON is a string representation of the object literal notation that we have just seen. There are, however, a couple of key differences:</p>
+    <ol>
+    <li>Property names must be double-quoted</li>
+    <li>Permitted values are double-quoted strings, numbers, true, false, null, arrays and objects</li>
+    <li>Functions are not permitted values</li>
+    </ol>
+    
+    <p>The parse() method takes a string of data in JSON format and returns a JavaScript object:</p>
+    
+    <p>JSON.parse(batman);<< { name: 'Batman','real name': 'Bruce Wayne',height: 74,weight: 210,hero: true,villain: false,allies: [ 'Robin', 'Batgirl', 'Superman' ] }</p>
+    
+    <p>The stringify() method does the opposite, taking a JavaScript object and returning a string of JSON data</p>
+    <p>MATH and DATE REGEXPare immutable objects in Javascript and can be used in many ways</p>
+    
+    <h3>Getter Methods</h3>
+    <p>The properties of date objects are unable to be viewed or changed directly. Instead, they have a number of methods known as getter methods, which return information about the date object, such as the month and year.
+    Once you’ve created a date object it will have access to all the getter methods. There are two versions of most methods – one that returns the information in local time, and the other that uses Coordinated Universal Time (UTC). The getTime(), getTimezoneOffset() and getYear() methods don't have UTC 
+    </p>
+    
+     
+    <p>Regular expressions have a list of special characters and modifiers see list in Character Groups in Chapter 5</p>
+     
+    <h2>Chapter 5 Summary</h2>
+    <h3>Chapter Summary</h3>
+    
+    <ol>
+    <li>Objects are a collection of key-value pairs placed inside curly braces {}.</li>
+    
+    <li>Objects have properties that can be any JavaScript value. If it’s a function, it’s known as a method.</li>
+    
+    <li>An object’s properties and methods can be accessed using either dot notation or square bracket notation.</li>
+    
+    <li>Objects are mutable, which means their properties and methods can be changed or removed.</li>
+    
+    <li>Objects can be used as parameters to functions, which allows arguments to be entered in any order, or omitted.</li>
+    
+    <li>Nested objects can be created by placing objects inside objects.</li>
+    
+    <li>JSON is a portable data format that uses JavaScript object literals to exchange information.</li>
+    
+    <li>The Math object gives access to a number of mathematical constants.</li>
+    
+    <li>The Math object can be used to perform mathematical calculations.</li>
+    
+    <li>The Date object can be used to create date objects.</li>
+    
+    <li>Once you’ve created a Date object, you can use the getter methods to access information about that date.</li>
+    
+    <li>Once you’ve created a Date object, setter methods can be used to change information about that date.</li>
+    
+    <li>The Regex object can be used to create regular expressions.</li>
+    
+    <li>>Now we’ve reached the end of the first part of the book, you should have a good grasp of the JavaScript programming language basics. But JavaScript was originally designed to be used in the browser, so in the next chapter we’ll look at how to use JavaScript to interact with web pages.</li>
+    </ol>
+    
+    <h2>Chapter 6 Notes</h2>
+    <p>jQuery is a popular JavaScript framework that makes it very easy to find elements on a page using a CSS-style syntax. </p>
+    <p>It uses document.querySelectorAll() in the background whenever it can. For example, the jQuery code $('ul#roster').find('li#bats');</p>
+     <p>is basically doing the same as our previous example:</p> <br>
+    
+    <h3>Be Careful Updating className</h3>
+    <p>Changing the className property of an element by assignment will overwrite all other classes that have already been set on the element.</p>
+    <p>This problem can be avoided by using the classList property instead.</p>
+    
+    <h3>Creating An Element</h3>
+    <p>The document object has a createElement() method that takes a tag name as a parameter and returns that element. </p>
+    <p>For example, we could create a new list item as a DOM fragment in memory by writing the following in the console:</p>
+    <p>const flash = document.createElement('li');</p>
+    <p>At the moment, this element is empty. To add some content, we’ll need to create a text node.</p>
+    <h2>Camel Case Properties</h2>
+    <p>Any CSS property names that are separated by dashes must be written in camelCase notation,</p> 
+        <p>So the dash is removed and the next letter is capitalized because dashes are not legal characters in property names.</p>
+    <p>For example, the CSS property background-color becomes backgroundColor. We can change the color of the superman background to green using this code:</p>
+    <p>Use with Caution</p>
+    <p>While it may seem useful to be able to edit the styles of elements on the fly like this, </p>
+    <p>it is much better practice to dynamically change the class of an element and keep the relevant styles for each class in a separate stylesheet.</p>
+    
+    <h2>Chapter 6 Summary</h2>
+    
+    <ol>
+    <li>	The Document Object Model is a way of representing a page of HTML as a tree of nodes.</li>
+    <li>	The document.getElementById(), document.getElementsByClassName(), document.getElementsByTagNames() <br>
+        and document.querySelector() can be used to access elements on a page.
+    <li>	The parentNode(), previousSibling(), nextSibling(), childNodes() and children() methods can be used to navigate around the DOM tree.</li>
+    <li>	An element’s attributes can be accessed using the getAttribute() method, and updated using the setAttribute() method.</li>
+    <li>	The createElement() and createTextNode() methods can be used to create dynamic markup on the fly.</li>
+    <li>	Markup can be added to the page using the appendChild() and insertBefore() methods.</li>
+    <li>	Elements can be replaced using the replaceChild() method, and removed using the removeChild() method.</li>
+    <li>	The innerHTML property can be used to insert raw HTML directly into the DOM.</li>
+    <li>	The CSS properties of an element can be changed by accessing the style property.
+    <li>Now we’ve learned how to navigate and dynamically update the markup of a web page, it’s time to start interacting with it. <br>
+    In the next chapter we’ll be covering a fundamental part of the JavaScript language: events.</li>
+    
+    
+    <li>	The Document Object Model is a way of representing a page of HTML as a tree of nodes.</li>
+    <li>	The document.getElementById(), document.getElementsByClassName(), document.getElementsByTagNames() and document.querySelector() 
+        <br>can be used to access elements on a page.</li>
+    <li>	The parentNode(), previousSibling(), nextSibling(), childNodes() and children() methods can be used to navigate around the DOM tree.</li>
+    <li>	An element’s attributes can be accessed using the getAttribute() method, and updated using the setAttribute() method.</li>
+    <li>	The createElement() and createTextNode() methods can be used to create dynamic markup on the fly.</li>
+    <li>	Markup can be added to the page using the appendChild() and insertBefore() methods.</li>
+    <li>	Elements can be replaced using the replaceChild() method, and removed using the removeChild() method.</li>
+    <li>	The innerHTML property can be used to insert raw HTML directly into the DOM.</li>
+    <li>	The CSS properties of an element can be changed by accessing the style property. Inline Event Handlers</li>
+    </ol>
+    <p>The original way of dealing with events in the browser was to use inline attributes that were added directly into the markup. Here’s an example that adds an onclick event handler to a paragraph element:</p>
+    
+    
+    
+    
+    <h3>Using Event Listeners</h3>
+    <p>The recommended way of dealing with events, and the current standard, is to use event listeners.
+    These were outlined in DOM level 2 and allow multiple functions to be attached independently <br>
+    to different events. They are supported in all modern browsers, although only in Internet Explorer 
+    from version 9 onwards.</p>
+    
+    
+    
+    <h2>Code Example With an Event Listener:</h2>
+    
+    <a href="coolmousecode.html" target="_blank" alt = "track the mouse">Cool Mouse Code</a>
+    
+    
+    
+    
+    
+    
+    
+    <h2>Chapter 7 Summary</h2>
+        <ol>
+        <li>Events occur when a user interacts with a web page.</li>
+        <li>An event listener is attached to an element, then invokes a callback function when the event occurs.</li>
+        <li>The event object is passed to the callback function as an argument, and contains lots of properties and methods relating to the event.</li>
+        <li>There are many types of event, including mouse events, keyboard events, and touch events.</li>
+        <li>You can remove an event using the removeEventListener method.</li>
+        <li>The default behavior of elements can be prevented using the preventDefault() function.</li>
+        <li>Event propagation is the order the events fire on each element.</li>
+        <li>Event delegation is when an event listener is added to a parent element to capture events that happen to its children elements.</li>
+    </ol>
+        <a href = "https://courses.wesbos.com/account/access/61e34c62a3f2756df465c81f/view/194130346" target="_blank" alt = "web bros link">https://courses.wesbos.com/account/access/61e34c62a3f2756df465c81f/view/194130346</a>
+    
+       <p> I joined with cha33dwick@gmail.com </p>
+    </body>
+    </html>
+    
+</body>
+</html>
