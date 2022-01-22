@@ -1,6 +1,6 @@
 const form = document.forms[0];
-console.log(form)
-document.write(form)
+//console.log(form) 
+//document.write(form)
 const input = form.elements.searchInput;
 
 input.addEventListener('focus', () => alert('focused'),
