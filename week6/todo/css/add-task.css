@@ -1,0 +1,9 @@
+.add-task {
+    position: fixed;
+    bottom: 2px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding: 1em;
+
+}

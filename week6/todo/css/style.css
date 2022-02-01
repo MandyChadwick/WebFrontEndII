@@ -1,0 +1,77 @@
+@import "task-list.css";
+@import "task-footer.css";
+@import "add-task.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+:root {
+    --primary: #e8b9abff;
+    --secondary: #adbca5ff;
+    --third-color: rgb(36, 21, 28);
+    --fourth-color:#8c5f66ff;
+    
+    --fifth-color:#d1edf2;
+    --sixth-color:black;
+}
+
+/*--laurel-green: #adbca5ff;
+--melon: #e8b9abff;
+--pastel-pink: #e09891ff;
+--wild-orchid: #cb769eff;
+--mauve-taupe: #8c5f66ff;*/
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--fifth-color);
+    color: var(--fourth-color);
+    max-width: 500px;
+    margin: auto;
+}
+h1 {font-family: 'Quintessential', cursive;}
+
+button {
+    background-color:var(--fifth-color);
+    color: var(--sixth-color);
+    border: none;
+    
+
+}
+
+
+
+li button{
+background-color:#adbca5ff;
+}
+
+#add-btn{
+    font-size: x-large;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+input[type=checkbox]:checked + .labelForCheck{
+    text-decoration: line-through;
+  }
+
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.form-control{
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+}
+
+h1{
+   display:flex;
+   align-items: center;
+  justify-content: center;
+}
+#newTask{
+    margin: 20px;
+}

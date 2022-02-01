@@ -1,0 +1,8 @@
+.task-footer{
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#tasks-left {
+    padding-left: 1em;
+}
