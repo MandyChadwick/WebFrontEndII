@@ -1,1 +1,160 @@
-<h1>Week 7</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Chapter 11 Further Functions And
+        Chapter 13 AJAX</h1>
+    <h2>From JavaScript Novice to Ninja</h2>
+
+    <h3>Notes</h3>
+    <p>If a function takes some time to compute a return value, we can save the result in a cache property.</p>
+    <p>One of the core tenets of functional programming: it allows generic higher-order functions to be used to return
+        more specific functions based on particular parameters.</p>
+    <img src="images/cache.png">
+    <p>It is possible to make a temporary function like this</p>
+    <img src="images/tempfunct.png"><br>
+    <img src="images/higherorderfunc.png">
+    <h3>Request Interface</h3>
+    <img src="images/makerequest.png" <!-- This is where I start working on Chapter 13-->
+
+
+    <h3>Definitions From Chapter 11:</h3>
+    <p><b>Immediately Invoked Function Expression – or IIFE</b> – (pronounced 'iffy') is an anonymous function that, as
+        the name suggests, is invoked as soon as it’s defined.</p>
+    <p><b>Generators</b> are special functions used to produce iterators that maintain the state of a value.</p>
+    <p><b>function*</b> declaration ( function keyword followed by an asterisk) defines a generator function, which
+        returns a Generator object.</p>
+
+    <p><b>Yield</b>the keyword is used to return a value. The difference between the yield and the return keywords is
+        that by using yield, the state of the value returned is remembered the next time</p>
+    <p><b>Functional programming</b> uses pure functions as the building blocks of a program. The functions perform a
+        series of operations without changing the state of any data. Each function forms an abstraction that should
+        perform a single task, while encapsulating the details of its implementation inside the body of the function.
+        This means that a program becomes a sequence of expressions based on the return values of pure functions. The
+        emphasis is placed on using function composition to combine pure functions together to complete more complex
+        tasks.</p>
+    <p><b>Higher Order Functions: </b>accept another function as an argument, or return another function as a result, or
+        both.</p>
+    <p><b>Currying</b> Named after Haskell Curry and it is when a function only partially applies its functions and some
+        are left to be resolved by other data. A final result is only returned once all the expected arguments have
+        eventually been provided.</p>
+    <p></p>
+
+    <!-- This is where I start working on Chapter 13-->
+    <h3>Definitions From Chapter 13</h3>
+    <p><b>Ajax </b>is a technique that allows web pages to communicate asynchronously with a server, and it dynamically
+        updates web pages without reloading.</p>
+    <p><b>The same-origin policy </b>in browsers blocks all requests from a domain that is different from the page
+        making the request</p>
+    <p><b>Cross-origin resource</b> sharing (CORS) is a solution to this problem as it allows resources to be requested
+        from another website outside the original domain. </p>
+    <p><b>Asynchronous loading techniques: </b> started to be noticed when Google launched Gmail and Google Maps in 2004
+        and 2005 respectively. These web applications used asynchronous loading techniques to enhance the user
+        experience by changing the parts of the page without a full refresh. This gave them a much snappier and
+        responsive quality that felt more like a desktop application.</p>
+    <p><b>CORS</b> cross-origin resource sharing. It is a solution to this problem as it allows resources to be
+        requested from another website outside the original domain.</p>
+    <p><b>The redirect() method </b>can be used to redirect to another URL. It creates a new promise that resolves to
+        the response from the redirected URL.At the present time, there is no support for the redirect() method in any
+        browser.</p>
+    <p><b>The blob() method</b>> is used to read a file of raw data, such as an image or a spreadsheet.</p>
+    <p>JSON is probably the most common format for AJAX responses</p>
+
+    <p><b>GET</b> requests to retrieve resources from the web. By default, a link in a web page will make a GET request.
+        Forms are also submitted using a GET request by default, but they will often use a POST request.</p>
+
+    <p><b>POST</b> requests, usually used to create a resource but can actually perform any task from the web</p>
+
+    <p><b>PUT</b> requests to upsert, which means insert a resource or update it entirely</p>
+
+    <p><b>PATCH</b> requests to make partial updates to a resource</p>
+
+    <p><b>DELETE</b> requests to delete a resources.</p>
+
+    <h2>Example:</h2>
+    <h3>Two Fact Generators</h3>
+    <a href="ajax.html">Click Here</a>
+    
+    <h2>Question:</h2>
+    <h4>Is much of this type of coding found in Chapters 11 and 13 used in backend web development?
+
+    </h4>
+    <h2>Chapter Summary Chapter 11</h2>
+    <ul><li>Functions have built-in properties such as length, but can have custom properties added.</li>
+
+        <li>All functions have call() and apply() methods that can invoke a function with the value of this bound to an
+            object that is provided as an argument.</li>
+
+        <li>Immediately Invoked Function Expressions or IIFEs are functions that are enclosed in parentheses and
+            immediately followed by double parentheses so they’re invoked. They are useful for namespacing variables and
+            setting default values.</li>
+
+        <li>Functions are able to dynamically redefine themselves in the body of the function, depending on certain
+            conditions.</li>
+
+        <li>A recursive function will keep invoking itself until a certain condition is met.</li>
+
+        <li>A callback is a function that’s provided as an argument to another function.</li>
+
+        <li>Callbacks are frequently used in asynchronous programming as part of the event loop. This means that a
+            program can continue to run in a single thread while waiting for another task to be completed.</li>
+
+        <li>Promises can be used instead of callbacks to deal with multiple asynchronous actions in sequence. They also
+            provide a nicer mechanism for handling errors.</li>
+
+        <li>Functions that return other functions are known as higher-order functions.</li>
+
+        <li>A closure is the process of keeping a reference to a variable available outside the scope of the function it
+            was originally defined in.</li>
+
+        <li>A generator is created by placing an asterisk character (*) after the function keyword.</li>
+
+        <li>A generator function will return an iterator object that provides a next() method, which returns the next
+            value in a sequence that is defined in the generator function.</li>
+
+        <li>Functional programming involves breaking processes down into steps that can be applied as a series of
+            functions.</li>
+
+        <li>Pure functions are functions that don't rely on the state of the code they are called from, have no
+            side-effects, and always give the same result when given the same arguments (referential transparency).</li>
+
+        <li>Currying or partial application is the process of applying one argument at a time to a function. A new
+            function is returned until all the arguments have been used.</li>
+    </ul>
+
+    <h2>Chapter Summary Chapter 13</h2>
+    <ul>
+        <li>Ajax is a technique for sending and receiving data asynchronously in the background.</li>
+
+        <li>The data can be sent in many forms, but it is usually in JSON.</li>
+
+        <li>Ajax can be used for making partial page updates without having to do a full page reload.</li>
+
+        <li>Ajax can be used for communicating with external APIs.</li>
+
+        <li>Ajax requests can be made using the Fetch API.</li>
+
+        <li>The Response interface allows you to control the response received from a request or to create your own
+            response objects.</li>
+
+        <li>The Request interface allows you to create a request object that contains information about the request
+            being made, such as the URL and headers.</li>
+
+        <li>The Headers interface allows you to create HTTP headers that can be added to a request or response object.
+        </li>
+
+        <li>Requests can retrieve data using a GET request, or send data using a POST request.</li>
+
+        <li>The FormData interface makes it easier to send data from forms.</li>
+    </ul>
+</body>
+
+</html>
