@@ -1,1 +1,66 @@
-<h1>Week 8</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Week 8 Notes</h1>
+    <h2> HTML5 and CSS3 for the Real world</h2>
+    <h2> Chapter8: Transforms and Transitions<br>
+        Chapter 12: Canvas, SVG, and Drag and Drop</h2>
+
+    <h3>Chapter 8 Definitions</h3>
+    <p><b>Transforms</b> The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element
+        on the page.</p>
+    <p><b>Transform Functions</b>can manipulate an element’s appearance </p>
+
+
+
+    <p><b>Translations </b>allow you to move elements left, right, up, or down. </p>
+    <p><b>Scaling </b>The scale(x,y) function scales an element by the defined factors horizontally then vertically </p>
+    <p><b>Rotate</b> The rotate() function rotates an element around the point of origin by a specified angle value.
+    </p>
+    <p><b>Skew: </b> The skew(x,y) function specifies a skew along the x and y axes. As you’d expect, the x specifies
+        the skew on the x axis, and the y specifies the skew on the y axis. If the second parameter is omitted, the skew
+        will only occur on the x axis </p>
+    <p><b>Transform-origin</b>Controls the origin from which your transforms are applied </p>
+    <p><b>Keyframe</b> is a snapshot that defines a starting or end point of any smooth transition. </p>
+    <h3>Chapter 8 Notes</h3>
+    <img src="transformtranslate.png">
+    <p>If you only want to move an element vertically or horizontally, you can use the translatex or translatey
+        functions respectively.</p>
+    <p>Transforms don’t work on inline elements. But that’s easy enough to fix. We’ll just add display: inline-block; to
+        our span:</p>
+    <p>Scale(1) would leave the element the same size, scale(2) would double its proportions, scale(0.5) would halve
+        them</p>
+    <p>A scaled element will grow outwards from or shrink inwards towards its center; in other words, the element’s
+        center will stay in the same place as its dimensions change. To change this default behavior, you can include
+        the transform-origin property, which we’ll be covering a bit later.</p>
+    <p>Transforms are applied in the order provided</p>
+    <p>200ms is generally considered the optimum time for a transition: anything slower will make the website seem slow,
+        drawing generally unwanted attention to what was supposed to be a subtle effect. Anything faster may be too
+        subtle</p>
+    <p>The most common timing functions include the key terms ease, linear, ease-in, ease-out, or ease-in-out</p>
+    <p> cubic-bezier function. It accepts four numeric parameters; for example, linear is the same as cubic-bezier(0, 0,
+        1, 1). If you’ve studied six years of calculus, the method of writing a cubic Bézier function might make sense;
+        otherwise, it’s likely you’ll want to stick to one of the five basic timing functions. You can also look at
+        online tools that let you play with different values, such as <a href=http://cubic-bezier.com/,>cubic-bezier.com
+            </a> </p> <p>The transition properties allow for multiple transitions in one cal lby including them as a
+            comma-separated list.</p>
+    <h3>Chapter 8 Questions</h3>
+
+    <h3>Chapter 12 Definitions</h3>
+    <p><b>Canvas</b>
+        With HTML5’s Canvas API, we can draw anything we can imagine, all through JavaScript</p>
+    <h3>Chapter 12 Notes</h3>
+    <img src="grabcanvasfrompage.png">
+    <p>As you may have gathered, the coordinate system in the canvas element is different from the Cartesian coordinate system you learned in math class. In the canvas coordinate system, the top-left corner is (0,0). If the canvas is 200 pixels by 200 pixels, then the bottom-right corner is (200,200), as Figure 12.3 illustrates.</p>
+    <h3>Chapter 12 Questions</h3>
+</body>
+
+</html>
