@@ -1,1 +1,67 @@
-<h1>Week 10</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Week 10</h1>
+    <h2>MDN Client Side Validation Notes</h2>
+    <p>The following notes were taken about <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">this </a> web page</p>
+    <h3>Definitions</h3>
+    <p><b>client-side form validation</b>ensure data submitted matches the requirements set forth in the various form
+        controls.</p>
+    <p><b>Form validation</b>When you enter data, the browser and/or the web server will check to see that the data is in the correct format and within the constraints set by the application</p>
+    <p><b>Client-side validation</b>validation done in the browser.</p>
+    <p><b>Server-side</b> validation done on the server.</p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <p><b></b></p>
+    <h3>Important quotes from the article:</h3>
+    <p>Client-side validation should not be considered an exhaustive security measure! Your apps should always perform security checks on any form-submitted data on the server-side as well</p>
+    <p>Reasons to Validate Data:
+        <ul>
+        <li>We want to get the right data, in the right format. </li>
+       <li> We want to protect our users' data.</li> 
+        <li>We want to protect ourselves.</li> </ul></p>
+    <p>Client side validation is done with javascript or html</p>
+    <p>Some built in HTML5 form controls are required, minlength, maxlength, min, max, type and pattern. </p>
+
+    <h3>Here is a screenshot on JavaScript Validating</h3>
+    <img src = "validatingjs.png" alt = "table of what validation api">
+    <p>In some cases, such as legacy browser support or custom controls, you won't be able to or won't want to use the Constraint Validation API.You're still able to use JavaScript to validate your form, but you'll just have to write your own.</p>
+    <p>This relies more heavily on Javascript</p>
+
+<h3>Example From Article</h3>
+<p>Click <a href="form.html" target = blank >Here</a>for an example of server side HTML validation with css.</p>
+
+
+
+
+    <h2>MDN Using The Fetch API Notes</h2>
+    <p>The following notes were taken about <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">this </a> web page</p>
+    <h3>Definitions</h3>
+    <p><b>The Fetch API </b>provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses</p>
+    <p><b>global fetch() </b>method that provides an easy, logical way to fetch resources asynchronously across the network.</p>
+
+    <p><b>Headers</b>The Headers interface allows you to create your own headers object via the Headers() constructor. A headers object is a simple multi-map of names to values:</p>
+    <p><b>Guard</b>Since headers can be sent in requests and received in responses, and have various limitations about what information can and should be mutable, headers' objects have a guard property. This is not exposed to the Web, but it affects which mutation operations are allowed on the headers object.</p>
+    <p><b>Response objects</b>Response instances are returned when fetch() promises are resolved.</p>
+    <p><b>Body</b> A body is an instance of any of the following types:ArrayBuffer, ArrayBufferView (Uint8Array and friends), Blob/File, string, URLSearchParams, FormData.</p>
+    <p><b></b></p>
+    <p><b></b></p>
+   
+    <p><img src="fetch.png"></p>
+
+    
+</body>
+
+</html>
