@@ -4,7 +4,7 @@
 
 
 html {
-    background-image: url("/assets/soccer-field-g3172b261f_640.jpg")
+    background-image: url("/final_project/assets/soccer-field-g3172b261f_640.jpg")
 }
 
 .whole-page-index-container {
@@ -40,11 +40,11 @@ Justify-content:center;}
 }
 
 .dictionary-link-div a{
-    color:white;
+    color:blanchedalmond;
 }
 
 .encyclopedia-link-div a{
-    color:white;
+    color:blanchedalmond;
 }
 
 .title-of-index-page{
@@ -54,11 +54,17 @@ Justify-content:center;}
     justify-content: center;
 }
 footer{display:flex;
-    background-color:white;
-justify-content:center;
+    flex-direction: column;
+  
+    background-color:blanchedalmond;
+    text-align:center;
+    margin:0;
+
 max-width:960px;
 margin:auto;
 font-family: 'Roboto', sans-serif;}
+
+footer p {margin:0;}
 
 img{max-width:100%;}
 
@@ -79,17 +85,19 @@ grid-template-columns: 1fr 1fr;}
  img {max-width:100%;}
 
 /*style for encyclopedia*/
-.searchResults{background-color: white;}
+.searchResults{background-color: #dceed1;}
 .title-of-encyclopedia-page{   
     display: flex;
     align-items: center;
     justify-content: center;}
 
-    .encyclopedia-main{background-color:white;}
+    .encyclopedia-main{background-color:
+        #dceed1;}
 
     /*style for dictionary*/
     .dictionary-main{
-        background-color:white;
+        background-color:
+        #dceed1;
     }
     .two-columns-for-encyclopedia-page{
         display:grid;
