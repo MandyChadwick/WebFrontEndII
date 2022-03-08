@@ -72,9 +72,17 @@ img{max-width:100%;}
     justify-content:center;
     height:30em;
 }
-.title-and-subtitle{
+.title-and-subtitle {
     font-family: 'Merriweather', serif;
     background-color: blanchedalmond;
+   
+}
+.to-provide-margin-in-encyclopedia-header{
+    margin:2em;
+}
+
+.title-and-subtitle h1 a{
+    margin:2em;
 }
 main{max-width: 960px;
     
@@ -92,7 +100,8 @@ grid-template-columns: 1fr 1fr;}
     justify-content: center;}
 
     .encyclopedia-main{background-color:
-        #dceed1;}
+        #dceed1;
+  }
 
     /*style for dictionary*/
     .dictionary-main{
@@ -103,3 +112,14 @@ grid-template-columns: 1fr 1fr;}
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .dictionary-header-words{margin:2em;}
+  .dictionary-colum-1{margin:2em;}
+  .searchBar{margin:2em;}
+  h1{text-align:center;}
+  .title-and-subtitle{
+    background-image:  radial-gradient(#285102, white, blanchedalmond);;
+  }
+  .resultItem{margin:2em;}
+  .ref-main {background-color: blanchedalmond;
+}
