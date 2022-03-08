@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap');
+
+
+
+
+html {
+    background-image: url("/assets/soccer-field-g3172b261f_640.jpg")
+}
+
+.whole-page-index-container {
+   
+
+    background-color: #285102;
+    justify-content:center;
+}
+
+.index-links-container{
+    display:flex;
+    Justify-content:center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.subtitle-of-index-page{display:flex;
+Justify-content:center;}
+
+.encyclopedia-link-div {
+    display:grid;
+    grid-template-columns: 1fr;
+   
+    margin:2em;
+}
+
+.dictionary-link-div {
+    display:grid;
+    grid-template-columns: 1fr;
+    
+    
+    margin:2em;
+   
+}
+
+.dictionary-link-div a{
+    color:white;
+}
+
+.encyclopedia-link-div a{
+    color:white;
+}
+
+.title-of-index-page{
+    font-size:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{display:flex;
+    background-color:white;
+justify-content:center;
+max-width:960px;
+margin:auto;
+font-family: 'Roboto', sans-serif;}
+
+img{max-width:100%;}
+
+.ref-image{display:flex;
+    justify-content:center;
+    height:30em;
+}
+.title-and-subtitle{
+    font-family: 'Merriweather', serif;
+    background-color: blanchedalmond;
+}
+main{max-width: 960px;
+    
+margin:auto;}
+.container-for-2-columns-dictionary-page{display:grid;
+grid-template-columns: 1fr 1fr;}
+
+ img {max-width:100%;}
+
+/*style for encyclopedia*/
+.searchResults{background-color: white;}
+.title-of-encyclopedia-page{   
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .encyclopedia-main{background-color:white;}
+
+    /*style for dictionary*/
+    .dictionary-main{
+        background-color:white;
+    }
+    .two-columns-for-encyclopedia-page{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }

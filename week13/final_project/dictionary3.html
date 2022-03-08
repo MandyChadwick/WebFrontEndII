@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictionary App</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+  <main class="dictionary-main">
+    <div class="title-and-subtitle">
+      <h1 class="h1">Dictionary</h1>
+    </div>
+    <div class="container-for-2-columns-dictionary-page">
+
+      <div class="dictionary-colum-1">
+        <div class="input">
+          <input onkeypress="handle(event)" type="text" class="search-field" placeholder="Type and press enter" />
+        </div>
+        <div class="result">
+          <h1 class="word"></h1>
+          <p class="phonetics"></p>
+          <p class="audio" src="" controls></p>
+          <p class="wordmeaning"></p>
+          <p class="word-definition"></p>
+          <p class="wordmeaning"></p>
+          <div class="synonyms"></div>
+        </div>
+      </div>
+      <div>
+        <img src="/assets/1136px-Sergei_Ivanov_2016_Referee.jpg">
+      </div>
+    </div>
+    <script src="dictionary3.js"></script>
+  </main>
+</body>
+<footer>
+  <p>&lt;&lt;</span>Powered by <a href="https://dictionaryapi.dev/" target="blank">Free Dictionary API
+    </a>&gt;&gt;</p>
+  <a href="index.html">home___</a><br>
+  <a href="encyclopedia.html">encyclopedia</a>
+</footer>
+
+</html>

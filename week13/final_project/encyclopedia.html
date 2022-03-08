@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encyclopedia</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+
+</head>
+
+<body>
+    <main class="encyclopedia-main">
+        <div class="title-and-subtitle">
+            <div class=title-of-encyclopedia-page>
+                <h1>Encyclopedia</h1>
+            </div>
+        </div>
+        <div class="two-columns-for-encyclopedia-page">
+            <div>
+
+
+                <form id="searchBar" class="searchBar">
+                    <label class="offscreen" for="search"></label>
+                    <input placeholder="type and press enter" id="search" type="text" autocomplete="off" />
+                    <div id="clear" class="none button clear" role="button" tabindex="0"
+                        aria-label="Clear search terms"> <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <!--             <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button"><i
+                    class="fa-solid blue fa-magnifying-glass">search</i></button> -->
+                </form>
+
+                <section class="results">
+
+                    <div class="statsBar"></div>
+                    <div id="stats" class="stats" aria-live="assertive">
+
+                    </div>
+                    <div id="searchResults" class="searchResults">
+
+                    </div>
+
+
+
+                </section>
+
+            </div>
+            <div>
+                <img src="/assets/1136px-Sergei_Ivanov_2016_Referee.jpg">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&lt;&lt;</span>Powered by <a href="https://wikipedia.org" target="blank">Wikipedia
+            </a>&gt;&gt;</p>
+        <a href="index.html">home </a><br>
+        <a href="dictionary3.html">dictionary</a>
+    </footer>
+</body>
+<script src="./js/main.js" type="module"></script>
+
+</html>
