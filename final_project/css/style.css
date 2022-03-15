@@ -123,3 +123,29 @@ grid-template-columns: 1fr 1fr;}
   .resultItem{margin:2em;}
   .ref-main {background-color: blanchedalmond;
 }
+
+/*Referee Image Animation*/
+#ref-image:hover{    transform: translate(10px, 0);
+    transform: rotate(0.05turn);
+}
+
+
+#dimension {
+    margin:auto;
+    width: 190px;
+    height: 60px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-animation: dimension 3s ease-in-out infinite alternate;
+            animation: dimension 3s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes dimension {
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+  @keyframes dimension {
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
